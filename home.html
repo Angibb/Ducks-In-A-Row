@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks In A Row Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup-overlay"></div>
+    <div id="welcome-popup">
+        <h2>WELCOME!</h2>
+        <p>Please enter your name to get started:</p>
+        <input type="text" id="username" placeholder="Your Name Here" maxlength="30">
+        <button id="submit-username">Enter</button>
+    </div>
+    <header>
+        <div id="headerImg">
+            <h1 id="header-h1">DUCKS IN A ROW</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div id="background">                
+        <div class="container">
+            <h1>PRO-DUCK-TIVITY TIMER</h1>                  
+            <h3>A fun customizable timer for kids, Ready-Set-Go!</h3>
+            <h1 id="welcome-msg"></h1>
+            <div class="customform">
+                <label for="bkgcolor"> <h2>Choose a color:</h2></label>
+                <input type="color" id="colorchoice">
+                <button id="submitcolor">Click Here to Change Timer Color!</button>
+                <label for="theme"><h2>Choose a Background theme:</h2h2></label>
+                <select class="themes" id="selection">
+                    <option value="" selected disabled>Choose a Theme</option>
+                    <option value="Images/Ducks-in-a-row-logo.png">Default Ducks</option>
+                    <option value="Images/animals.jpg">Animal</option>
+                    <option value="Images/astronaut-7846067_1920.jpg">Space</option>
+                    <option value="Images/fairytale.jpg">Fairytale</option>
+                    <option value="Images/dinosaur-4373602_1920.png">Dinosaur</option>
+                    <option value="Images/superhero.png">Superhero</option>
+                </select>
+            </div>
+
+            <div class="timerdisplay">
+                <div id="hours">00</div>:
+                <div id="minutes">00</div>:
+                <div id="seconds">00</div>
+            </div>
+            <div class="settimer">
+                <input type="number" id="sethrs" placeholder="HOURS">
+                <input type="number" id="setmins" placeholder="MINUTES">
+                <input type="number" id="setsecs" placeholder="SECONDS">
+            </div>
+            <div class="controltimer">
+                <button id="setbtn">Set Timer</button>
+                <button id="startbtn">Start Timer</button>
+                <button id="resetbtn">Reset Timer</button>
+            </div> 
+        </div>
+    </div>
+    </main>
+    <audio id="alarmSound" src="Sounds/alarm-trimmed.ogg" preload="auto"></audio>
+    <footer>
+        <img id="footer-logo" src="Images/Ducks-logo-02.png" alt="duck logo" width="100px" height="100px">
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
