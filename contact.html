@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks In A Row Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="headerImg">
+            <h1 id="header-h1">DUCKS IN A ROW</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <div class="container">
+            <h1>Contact Us</h1>
+            <h3>Fill out the form below</h3>
+            <form id="contactform" class="contactform" >
+                <label for="name"><h2> Name</h2></label>
+                <input type="text" id="name" placeholder="Enter your name here..." required minlength="2" maxlength="40">
+                
+                <label for="email"><h2> Email </h2></label>
+                <input type="email" id="email" placeholder="Enter your email here..." required maxlength="254">
+                    
+                <label for=""><h2> Subject </h2></label>
+                <input type="text" id="subject" placeholder="Enter message subject here.." required minlength="2" maxlength="40">
+                
+                <label for=""><h2> Message </h2></label>
+                <textarea name="message" id="message" 
+                placeholder="Enter your message here and you will recieve a reply back as soon as possible, usually within 2-4 business days. Thank you!"
+                style="height: 200px;" required minlength="20" maxlength="500" title="Message must be at least 20 characters long..."></textarea>
+                    
+                <button type="submit">SUBMIT </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img id="footer-logo" src="Images/Ducks-logo-02.png" alt="duck logo" width="100px" height="100px">
+    </footer>
+</body>
+</html>
